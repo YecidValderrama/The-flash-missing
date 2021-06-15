@@ -6,11 +6,13 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: #e4f0ec;
+    /* background-color: #e4f0ec; */
+    background: url(/Img/fondo.jpg);
 }
 .container{
     width: 80%;
     margin: auto;
+    margin-top: 25px;
 }
 h2 {
     font-family: Old English Text MT, sans-serif;
@@ -42,44 +44,40 @@ nav li{
     width: 100%;
     align-items: center;
     height: 100%;
+    justify-content: center;
+    background-color: white;
 }
 .menu .fecha{
     background-color: black;
+    font-size: 20px;
+    font-weight: bold;
     color: white;
-    width: 13%;
+    width: 15%;
     text-align: center;
     padding: 8px;
 }
-.menu .menu1{
-    display: flex;
-    justify-content: space-around;
+.menu .menu1 a, .menu .menu2 a{
+    font-weight: bold;
+    margin-right: 15px;
+}
+.menu .menu2 a{
+    font-weight: bold;
 }
 h1{
     font-size: 6rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+.articulo .autor {
+    border-bottom: 8px solid black;
+}
+.articulo .autor span{
+    font-weight: bold;
+}
 .imagen img{
     width: 100%;
 }
 
-/* main{
-    display: grid;
-    grid-template-areas: 'izquierda centro derecha';
-    grid-template-columns: 0.5fr 0.8fr 0.5fr ;
-    grid-row: 1fr;
-}
-.articulo{
-    grid-area: izquierda;
-}
-.imagen{
-    grid-area: centro;
-
-}
-.articulo2{
-    grid-area: derecha;
-
-} */
 main{
     display: flex;
 }
@@ -89,6 +87,7 @@ main{
 }
 .articulo p{
     width: 100%;
+    padding: 8px;
 }
 .imagen{
    width: 34%;
@@ -100,6 +99,9 @@ main{
 }
 .articulo2 p{
     width: 100%;
+}
+.world{
+    font-weight: bold;
 }
 @media (max-width:1024px){
     h2{
@@ -129,5 +131,10 @@ main{
     .articulo2{
         width: 100%;
         height: 100%;
+    }
+}
+@media (max-width:500px){
+    .menu .fecha{
+       display: none;
     }
 }
